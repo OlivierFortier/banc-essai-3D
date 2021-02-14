@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Header() {
   return (
     <header className="bg-indigo-300 text-xl py-2">
@@ -6,9 +7,15 @@ export default function Header() {
       </h1>
       <nav>
         <ul className="flex justify-around">
-          <li>R3F</li>
-          <li>Three.js</li>
-          <li>a-frame</li>
+          <Link href="/">
+            <li className="cursor-pointer">R3F</li>
+          </Link>
+          <Link href="/threejs">
+            <li className="cursor-pointer">Three.js</li>
+          </Link>
+          <Link href="/aframe">
+            <li className="cursor-pointer">a-frame</li>
+          </Link>
         </ul>
       </nav>
     </header>

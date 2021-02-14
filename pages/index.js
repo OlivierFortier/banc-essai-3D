@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Canvas, useFrame } from "react-three-fiber";
+import { Canvas } from "react-three-fiber";
 import Boite from "../components/R3F/Boite";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <main className=" mx-auto flex flex-col items-center bg-green-700 font-sans flex-auto">
         <article className="">
           <h2 className="text-center text-2xl py-3">React-Three-Fiber (R3F)</h2>
-          <p className="">
+          <p className="w-4/5 mx-auto">
             Cette scène est produite très facilement grâce au paradigme
             expressif et déclaratif. C'est très intuitif, et facile à composer.
             Je peux simplement "décrire" ce que je veux, la couleur, la taille
