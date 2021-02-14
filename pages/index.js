@@ -13,8 +13,8 @@ export default function Home() {
 
       <main className=" mx-auto flex flex-col items-center bg-green-700 font-sans flex-auto">
         <article className="">
-          <h2>React-Three-Fiber (R3F)</h2>
-          <p className="text-justify w-96">
+          <h2 className="text-center text-2xl py-3">React-Three-Fiber (R3F)</h2>
+          <p className="">
             Cette scène est produite très facilement grâce au paradigme
             expressif et déclaratif. C'est très intuitif, et facile à composer.
             Je peux simplement "décrire" ce que je veux, la couleur, la taille
@@ -23,8 +23,8 @@ export default function Home() {
           </p>
         </article>
 
-        <section className="bg-pink-600 w-full mx-auto flex-auto">
-          <Canvas style={{ height: "100%" }}>
+        <section className="bg-pink-600 w-screen flex-auto">
+          <Canvas style={{ height: "100%", width: "100%" }}>
             <pointLight position={[10, 10, 10]} />
             <ambientLight />
             <Boite />
