@@ -9,7 +9,7 @@ export default function Boite() {
 
   return (
     <mesh ref={mesh} scale={[1, 1, 1]}>
-      <boxBufferGeometry args={[1, 1, 1]} />
+      <boxBufferGeometry args={[3, 3, 3]} />
       <meshStandardMaterial color={"green"} />
     </mesh>
   );
