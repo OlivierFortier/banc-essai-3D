@@ -2,7 +2,7 @@ import { useFrame } from "react-three-fiber";
 import { useRef } from "react";
 export default function Boite() {
 
-  // avec three.js , on peut programmer de facon "réactive"
+  // avec react-three-fiber , on peut programmer de facon "réactive"
   const mesh = useRef();
 
   //facilement produire des animations

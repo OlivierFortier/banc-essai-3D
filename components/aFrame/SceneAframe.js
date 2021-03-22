@@ -1,7 +1,17 @@
 export default function SceneAframe() {
-    // comme vous pouvez le voir, on programme la scène de facon déclarative, tout comme r3f, mais un peu différement,
+    // comme vous pouvez le voir, on programme la scène de facon déclarative, 
+    // tout comme r3f, mais un peu différement,
     // avec des "primitives" et un système d'entité-composant
     // le problème, est que le "tooling" n'est pas à la hauteur
+
+    /*
+        On semble avoir accès a des beaux composants, mais ca vient avec un tas de problème
+        dès qu'on veut faire quelque chose de personnalisé. Ce n'est pas intuitif du tout,
+        et il faut tout programmer à la main par la suite.
+
+        Ca ne fonctionne pas très bien lors du changement de page, ou bien encore sur 
+        toutes les plateformes différentes, malheureusement.
+    */
     return (
         <a-scene>
             <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>

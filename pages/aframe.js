@@ -1,7 +1,8 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-// je dois importer de facon dynamique dans un composant externe, car a-frame n'est pas compatible avec le SSR
+// je dois importer de facon dynamique dans un composant externe,
+//  car a-frame n'est pas compatible avec le rendu coté serveur
 const SceneAframe = dynamic(() => import("../components/aFrame/SceneAframe"), {
   ssr: false,
 });
